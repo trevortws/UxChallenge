@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body style="background-color:#f4ecff">
+    <div id="logo">
+      <h1 id="company_name">Acemstack</h1>
+      <div id="logocontainer">
+        <img id="company_logo" src="logo-acmestack.svg">
+      </div>
+    </div>
+    <div id="login">
+      <div>
+        <div id="input_box">
+          <form id="input_form">
+            <input type="text"  id="user_name" placeholder="username"><br>
+            <input type="password" id="password" placeholder="password"><br>
+            <input type="button" id="loginbutton" name="login" value="login"onclick="loading()">
+          </form>
+        </div>
+        <p id="pwErrorMessage">password must be between<br> 8 and 24</p>
+        <label class="checkbox-text">remember me
+          <input type="checkbox">
+          <span class="checkmark"</span>
+        </label>
+      </div>
+      <div id="otherlogin">
+        <div style="margin-top:13vw; margin-left: 20vw;">
+          <p style="font-style:italic;color:#7e24fa;">or login in with</p><br>
+        </div>
+        <div style="margin-left:18vw;">
+          <button id="facebook"></button>
+          <button id="google"></button>
+          <button id="twitter"></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="success_message">
+      <h1>Congratulation</h1>
+      <h4>You have successfully logged in.</h4>
+      <button id="sign_out" onclick="sign_out()">sign out</button>
+    </div>
+  </body>
+
+</html>

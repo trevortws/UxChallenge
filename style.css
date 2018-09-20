@@ -1,0 +1,390 @@
+body{
+  font-family:-apple-system, BlinkMacSystemFont, "San Francisco";
+  height: 100%;
+}
+#input_box{
+  width: 30vw;
+  box-shadow: 5px 5px 5px #888888;
+  margin-top: 10vw;
+  margin-left: 10vw;
+}
+input{
+  text-align: center;
+  border-color: #e4d2ff;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 2px;
+  width: 30vw;
+  height: 40px;
+  color: #8456ff;
+  font-size: 1vw;
+  font-weight: bold;
+}
+::placeholder{
+  color:#caaef2;
+  font-size: 1vw;
+  font-weight: bold;
+}
+input[type=button]{
+  color: #ffffff;
+  background-color: #7e24fa;
+  width:30.2vw;
+  font-size: 1vw;
+  font-weight: bold;
+
+}
+input[type=checkbox]{
+  background-color: #f4ecff;
+}
+.checkbox-text{
+  display: block;
+  position: relative;
+  padding-top: 5px;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  margin-left:20vw;
+  margin-top: 7vw;
+  color:#7e24fa;
+  cursor: pointer;
+  font-size: 10px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkbox-text input{
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.checkbox-text :hover{
+  background-color: #e4d2ff;
+}
+.checkmark{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5vw;
+  width: 1.5vw;
+  border-style: solid;
+  border-color: #7e24fa;
+  border-radius: 5px;
+}
+
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkbox-text input:checked ~ .checkmark:after {
+    display: block;
+}
+.checkbox-text .checkmark:after {
+    width: 1.1vw;
+    height: 1.1vw;
+    background-color: #7e24fa;
+    margin-left: 0.2vw;
+    margin-top: 0.2vw;
+    radius: 3px;
+}
+.container {
+  height: 26px;
+  width: 26px;
+  background-color: #caaef2;
+  border-radius: 50%;
+  padding-top:6px;
+  padding-left:6px;
+  margin-left: 10px;
+  display: inline-block;
+}
+#twitter{
+  height:35px;
+  width:35px;
+  background-color: #caaef2;
+  border-radius:50%;
+  background-image:url(logo-twitter.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+#google{
+  height:35px;
+  width:35px;
+  background-color: #caaef2;
+  border-radius:50%;
+  background-image:url(logo-google.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+#facebook{
+  height:35px;
+  width:35px;
+  background-color: #caaef2;
+  border-radius:50%;
+  background-image:url(logo-facebook.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px 20px;
+}
+button{
+  margin-left: 10px;
+}
+#logo{
+  height:100%;
+  width: 50%;
+  margin-top: -10px;
+  margin-right: -10px;
+  margin-left: -5px;
+  float: right;
+  background-color: #7e24fa;
+}
+#login{
+  height: 100%;
+  width: 50%;
+  float:left;
+  display: ;
+  margin-bottom: ;
+}
+#company_name{
+  color:white;
+  margin-top: 200px;
+  margin-left: 17vw;
+  font-size: 40px;
+}
+#company_logo{
+  height:50px;
+}
+#logocontainer{
+  height:50px;
+  width: 55px;
+  border-radius: 10px;
+  border: 2px;
+  border-style: solid;
+  border-color: #caaef2;
+  background-color: white;
+  margin-left: 22vw;
+  margin-bottom: 100%;
+  padding: 6px 3px 6px 8px;
+}
+#pwErrorMessage{
+  color:red;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: -4vw;
+  display: none;
+}
+#success_message{
+  height: 100%;
+  width: 51%;
+  float: left;
+  display: none;
+  color:white;
+  text-align: center;
+  padding-top: 180px;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: 5px;
+
+}
+#sign_out{
+  color: #7e24fa;
+  border-radius:15px;
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+  margin-bottom: ;
+  margin-top: 30px;
+
+}
+#otherlogin{
+  margin-top: -100px;
+}
+@media only screen and (max-width:600px){
+  #logo{
+    margin-left: -10px;
+    padding-left: 20vw;
+    padding-right: 20px;
+    padding-top: 30px;
+    float:none;
+    width:100%;
+  }
+  #company_name{
+    color:white;
+    margin-top: 0px;
+    margin-left: 18vw;
+    font-size: 20px;
+  }
+  #logocontainer{
+    height:25px;
+    width: 25px;
+    border-radius: 10px;
+    border: 2px;
+    border-style: solid;
+    border-color: #caaef2;
+    background-color: white;
+    margin-left: 24vw;
+    margin-bottom: 20%;
+    padding: 6px 6px 6px 6px;
+  }
+  #company_logo{
+    height:25px;
+  }
+  #input_box{
+    width: 40vw;
+    box-shadow: 5px 5px 5px #888888;
+    margin-top: 10vw;
+    margin-left: 27vw;
+  }
+  #login{
+    width: 100%;
+    margin-top: -25%;
+  }
+  input{
+    text-align: center;
+    border-color: #e4d2ff;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    width: 40vw;
+    height: 40px;
+    color: #8456ff;
+    font-size: 1vw;
+    font-weight: bold;
+  }
+  ::placeholder{
+    color:#caaef2;
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+  input[type=button]{
+    color: #ffffff;
+    background-color: #7e24fa;
+    width:40.2vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+
+  }
+  input[type=checkbox]{
+    background-color: #f4ecff;
+  }
+  .checkbox-text{
+    display: block;
+    position: relative;
+    margin-left: 37vw;
+    padding-top: 0px;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size:10px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  .checkbox-text input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .checkbox-text :hover{
+    background-color: #e4d2ff;
+  }
+  .checkmark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    border-style: solid;
+    border-color: #7e24fa;
+    border-radius: 5px;
+  }
+
+
+  .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+  }
+
+  .checkbox-text input:checked ~ .checkmark:after {
+      display: block;
+  }
+  .checkbox-text .checkmark:after {
+      width: 10px;
+      height: 10px;
+      background-color: #7e24fa;
+      margin: 2.5px 2.5px 2.5px 2.5px;
+      radius: 3px;
+  }
+  .container {
+    height: 26px;
+    width: 26px;
+    background-color: #caaef2;
+    border-radius: 50%;
+    padding-top:6px;
+    padding-left:6px;
+    margin-left: 10px;
+    display: inline-block;
+  }
+  #twitter{
+    height:20px;
+    width:20px;
+    background-color: #caaef2;
+    border-radius:50%;
+    background-image:url(logo-twitter.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 15px;
+  }
+  #google{
+    height:20px;
+    width:20px;
+    background-color: #caaef2;
+    border-radius:50%;
+    background-image:url(logo-google.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 15px;
+  }
+  #facebook{
+    height:20px;
+    width:20px;
+    background-color: #caaef2;
+    border-radius:50%;
+    background-image:url(logo-facebook.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 15px;
+  }
+  button{
+    margin-left: 10px;
+  }
+  #otherlogin{
+    margin-top: 0px;
+    margin-left: 15vw;
+  }
+  #pwErrorMessage{
+    color:red;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -4vw;
+    display: none;
+  }
+  #success_message{
+    height: 100%;
+    width: 51%;
+    float: left;
+    display: none;
+    color:white;
+    text-align: center;
+    padding-top: 180px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: 5px;
+
+  }
+}
