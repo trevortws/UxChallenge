@@ -1,0 +1,19 @@
+{
+  "name": "acemestack",
+  "version": "1.0.0",
+  "description": "acemestack project",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevortws/UxChallenge.git"
+  },
+  "author": "Trevor Siu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevortws/UxChallenge/issues"
+  },
+  "homepage": "https://github.com/trevortws/UxChallenge#readme"
+}
